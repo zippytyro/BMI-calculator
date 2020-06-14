@@ -7,7 +7,7 @@ document.querySelector("button").addEventListener("click", function () {
     // calculation
     let bmi = weight.value / Math.pow(height.value, 2);
     bmi = Math.floor(bmi);
-    if (weight.value == 0 || height.value == 0 || weight.value = NaN || height.value = NaN) {
+    if (weight.value == 0 || height.value == 0){
         bmiResult.textContent = "Invalid Input. Try again.";
     } else {
         bmiResult.textContent = "Your BMI is " + bmi;
