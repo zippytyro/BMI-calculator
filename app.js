@@ -8,8 +8,8 @@ document.querySelector("button").addEventListener("click", function () {
     let bmi = weight.value / Math.pow(height.value, 2);
     bmi = Math.floor(bmi);
     if (weight.value == 0 || height.value == 0){
-        bmiResult.textContent = "Invalid Input. Try again.";
+        bmiResult.innerHTML = "Invalid Input. Try again.";
     } else {
-        bmiResult.textContent = "Your BMI is " + bmi;
+        bmiResult.innerHTML = "Your BMI is " + bmi;
     }
 });
